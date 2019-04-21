@@ -10,7 +10,7 @@ import java.io.IOException;
 @WebServlet(name = "Servletindex")
 public class Servletindex extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+            String nts="受修改测试";
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
