@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: url('/javafeizhao/img/bj.png');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.text-a{
+    text-decoration: none;
+    color: white;
+}
+.flip-container{
+    float: left;
+    width: 25%;
+    height: 252px;
+}
+.text{
+    color: white;
+    position: absolute;
+    left:32%;
+    top: 110px;
+    width: 110px;
+    text-align: center;
+
+}
+/*为了实现以上效果，先进行元素布局。给.front,.back相对.flip进行绝对定位,让他们在相同位置重叠。
+布局部分代码如下：*/
+.front,
+.back{
+    width: 100%;
+    height: 252px;
+}
+
+.filpper{
+    position: relative;
+}
+.front,
+.back{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    backface-visibility: hidden;
+}
+.front{
+    z-index: 2 ;
+}
+/*(1) 为了实现动画效果首先给祖先元素.container,.flip设置以下属性，以触发3d效果和设置动画：*/
+.flip-container{
+    perspective: 1000px;
+    transform-style:preserve-3d ;
+}
+
+.filpper{
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition:0.6s;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+/*接着，为了让图画翻转时不露出背面，给.front,.back设置backface-visibility属性：*/
+.front,
+.back{
+    -webkit-backface-visibility:hidden ;
+    -moz-backface-visibility:hidden ;
+    -ms-backface-visibility: hidden;
+    backface-visibility:hidden;
+}
+/*为了让鼠标滑过包含块时，包含块翻转180度，以实现“正”“反”面的切换。给背面的元素设置transform:rotateY(-180deg)，这时我们将无法看到.back。*/
+.back{
+    transform:rotateY(-180deg);
+
+}
+/*鼠标经过的时候 flip就翻转180deg 翻转的图片由于是背面就看不见*//*但由于.back先翻转了-180deg 所以当他再次rotateY(180deg)的时候 他其实就是正面了即rotate(0)所以此时他能出现  */
+.flip-container:hover .filpper{
+    transform:rotateY(180deg);
+}
+
+
+
+
+
