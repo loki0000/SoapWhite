@@ -18,14 +18,14 @@
         <!--1.导航栏-->
         <div class="s4sw">
             <ul>
-                <li>首页</li>
-                <li>推荐</li>
-                <li>最热</li>
-                <li>搜索</li>
-                <li>关于我</li>
+                <li><a href="##">首页</a></li>
+                <li><a href="##">推荐</a></li>
+                <li><a href="##">最热</a></li>
+                <li><a href="##">搜索</a></li>
+                <li><a href="##">关于我</a></li>
             </ul>
         </div>
-        //商品展示
+        <!--商品展示-->
         <div class="productExhibition">
 
         </div>

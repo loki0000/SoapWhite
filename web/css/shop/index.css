@@ -3,11 +3,23 @@
     padding: 0px;
 
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 #box{
     width: 100%;
 }
 .s4sw{
     width: 100%;
-    height: 100px;
-    background-color: aquamarine;
+    height: 60px;
+    background-color: #ca381a;
+
+}
+.s4sw ul li{
+
+    list-style: none;
+    float: left;
+    margin-left:50px;
+    margin-top: 15px;
 }

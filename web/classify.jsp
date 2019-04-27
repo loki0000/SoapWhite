@@ -22,6 +22,9 @@
         String str[]=new String []{"个 人 信 息","动 物","美 食","生 活","音 乐","游 戏","摄 影",
                 "二 次 元 动 漫","电 影","星 座 轮 盘","商 店","语 音 房"};
         application.setAttribute("str",str);
+        String str2[]=new String[]{"##","##","##","##","##","##","##","##","##","##"
+                ,"##","/shop/index.jsp"};
+        application.setAttribute("str2",str2);
     %>
     <div id="box">
         <c:forEach begin="1" end="12" var="i">
@@ -33,7 +36,7 @@
                 <div class="back">
                     <img src="img/page2/tp${i}.png" width="100%" height="100%"/>
                     <div class="text" align="" >
-                        <a href="##" class="text-a">${str[i-1]}</a>
+                        <a href="${pageContext.request.contextPath}${applicationScope.str2[i-1]}" class="text-a">${str[i-1]}</a>
                     </div>
                 </div>
             </div>
