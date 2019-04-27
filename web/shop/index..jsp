@@ -9,13 +9,14 @@
 <html>
 <head>
     <title>商店</title>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/shop/index.css"/>
 </head>
 <body>
 
     <div id="box">
 
-        //1.导航栏
-        <div>
+        <!--1.导航栏-->
+        <div class="s4sw">
             <ul>
                 <li>首页</li>
                 <li>推荐</li>
@@ -23,6 +24,9 @@
                 <li>搜索</li>
                 <li>关于我</li>
             </ul>
+        </div>
+        //商品展示
+        <div class="productExhibition">
 
         </div>
 

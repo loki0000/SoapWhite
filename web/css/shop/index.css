@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+#box{
+    width: 100%;
+}
+.s4sw{
+    width: 100%;
+    height: 100px;
+    background-color: aquamarine;
+}
