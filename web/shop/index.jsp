@@ -35,7 +35,13 @@
         <div class="picture_presentation">
             <c:forEach begin="0" end="5" var="i">
                 <div class="diviimage">
-
+                    <ul>
+                        <li><img src="../img/page3/kuzhi.png" width="100%" height="100%"/></li>
+                        <li>name${i}</li>
+                        <li>200${i}$</li>
+                        <li>购买</li>
+                        <li class="pitchUP">pitchUP</li>
+                    </ul>
                 </div>
             </c:forEach>
         </div>

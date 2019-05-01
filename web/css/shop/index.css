@@ -42,3 +42,28 @@ a{
     margin: 50px ;
     float: left;
 }
+.diviimage ul li{
+    width: 100%;
+    background-color: cornflowerblue;
+    margin-bottom: 10px;
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+    color: white;
+}
+.diviimage ul li img{
+    height: 200px;
+
+}
+.diviimage .pitchUP{
+    height: 40px;
+    background-color: black;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    display: none;
+}
+.diviimage ul:hover .pitchUP{
+    display: block;
+}
