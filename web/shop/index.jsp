@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
@@ -25,9 +26,17 @@
                 <li><a href="##">关于我</a></li>
             </ul>
         </div>
-        <!--商品展示-->
-        <div class="productExhibition">
+        <!--轮播图-->
+        <div id="slideshow">
+            <img src="img/"
+        </div>
+        <!--图片展示-->
+        <div class="picture_presentation">
+            <c:forEach begin="0" end="5" var="i">
+                <div class="diviimage">
 
+                </div>
+            </c:forEach>
         </div>
 
     </div>
