@@ -10,6 +10,7 @@
 <html>
 <head>
     <title>商店</title>
+    <script type="text/javascript" src="../js/shop/index.js"></script>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/shop/index.css"/>
 </head>
 <body>
@@ -28,7 +29,7 @@
         </div>
         <!--轮播图-->
         <div id="slideshow">
-            <img src="img/"
+            <img src="../img/page3/lbt1.png" width="100%" height="100%"/>
         </div>
         <!--图片展示-->
         <div class="picture_presentation">
