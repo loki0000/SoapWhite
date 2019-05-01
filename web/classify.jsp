@@ -23,7 +23,7 @@
                 "二 次 元 动 漫","电 影","星 座 轮 盘","商 店","语 音 房"};
         application.setAttribute("str",str);
         String str2[]=new String[]{"##","##","##","##","##","##","##","##","##","##"
-                ,"##","/shop/index.jsp"};
+                ,"/shop/index.jsp","##"};
         application.setAttribute("str2",str2);
     %>
     <div id="box">
