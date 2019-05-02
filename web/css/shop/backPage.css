@@ -3,7 +3,7 @@
     padding: 0px;
 }
 #pagename{
-    width: 100%;
+    width: 89%;
     padding-left: 150px;
     background-color: cornflowerblue;
 }
@@ -15,7 +15,7 @@
 #leftpage{
     width: 20%;
     height: 100%;
-    background-color: #1b3667;
+    background-color: #e6e2e6;
     float: right;
 
 }

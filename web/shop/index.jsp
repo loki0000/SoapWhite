@@ -10,6 +10,9 @@
 <html>
 <head>
     <title>商店</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="../img/favicon.ico" type="image/x-icon" />
     <script type="text/javascript" src="../js/shop/index.js"></script>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/shop/index.css"/>
 </head>
