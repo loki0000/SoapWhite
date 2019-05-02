@@ -17,7 +17,6 @@ a{
 
 }
 .s4sw ul li{
-
     list-style: none;
     float: left;
     margin-left:50px;
@@ -25,11 +24,53 @@ a{
 }
 #slideshow{
     width: 100%;
-    height: 768px;
+    height: 350px;
     min-width: 1300px;
+    background-color: #f3f789;
+
+}
+.slideshow_box{
+    width: 80%;
+    height: 350px;
+    margin: 0px auto;
+
+}
+.slideshow_center{
+    height: 350px;
+    width: 80%;
+    overflow: hidden;
+    float: left;
+    border-right: 5px solid #484a07;
+    border-left: 5px solid #484a07;
+}
+.slideshow_center2{
+    height: 50px;
+    width: 80%;
+    border-right: 5px solid #484a07;
+    border-left: 5px solid #484a07;
+    float: right;
+    margin-right: 10%;
+
+}
+.slideshow_left,
+.slideshow_right{
+    width: 50px;
+    height: 100px;
+    background-color: #0b090d;
+    float: left;
+    margin-top: 10%;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    cursor: pointer;
+
+}
+.slideshow_left{
+    margin-left: 5%;
 }
 .picture_presentation{
-    width: 1300px;
+    width: 1200px;
     margin: 0px auto;
     background-color: white;
 }
@@ -67,3 +108,4 @@ a{
 .diviimage ul:hover .pitchUP{
     display: block;
 }
+

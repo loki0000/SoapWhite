@@ -29,7 +29,11 @@
         </div>
         <!--轮播图-->
         <div id="slideshow">
-            <img src="../img/page3/lbt1.png" width="100%" height="100%"/>
+            <div class="slideshow_box">
+            <div class="slideshow_left"></div>
+            <div class="slideshow_center"><img src="../img/page3/lbt1.png" width="100%"/></div>
+            <div class="slideshow_right"></div>
+            </div>
         </div>
         <!--图片展示-->
         <div class="picture_presentation">

@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#pagename{
+    width: 100%;
+    padding-left: 150px;
+    background-color: cornflowerblue;
+}
+#pagename span{
+    font-size: 20px;
+    font-family: 方正粗黑宋简体;
+    color: white;
+}
+#leftpage{
+    width: 20%;
+    height: 100%;
+    background-color: #1b3667;
+    float: right;
+
+}
+#rightpage{
+    width:80%;
+    height: 100%;
+    float: right;
+    background-color: #d2e0f9;
+}
