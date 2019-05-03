@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url("/javafeizhao/img/bj.png");
+}
+table{
+    text-align: center ;
+    font-size: 10px;
+    color: white;
+}
+#box{
+
+    width: 800px;
+    height: 400px;
+    margin: 0px auto;
+    margin-top: 50px;
+    padding-top:50px ;
+    background-color:rgba(234,234,234,0.1);
+}
+#box-outer{
+    width: 300px;
+    height: 200px;
+    background-color: cornflowerblue;
+    margin: 0px auto;
+    border: 5px solid white;
+    opacity: 0.8;
+    text-align: center ;
+    padding: 50px;
+
+}
+.textbox{
+    width: 200px;
+    height: 21px;
+    border: none;
+    margin-top: 20px;
+
+}

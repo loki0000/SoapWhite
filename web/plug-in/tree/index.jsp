@@ -64,12 +64,18 @@
 <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
 <script type="text/javascript" src="../../js/shop/backPage.js"></script>
 <script>
-    var inn
-    function way2(){
-        if (inn=="商品修改")
+    var strinn="待更新"
+    function way2(inn){
+
+        var strname=inn.innerText
+        //alert(strname)
+        if (strname=="商品修改") {
             parent.window.page();
-        else if (inn=="待更新")
-            parent.window.page();
+
+        }else if (strname=="待更新"){
+            parent.window.page2();
+        }
+
     }
 
     var arr = [
@@ -150,8 +156,7 @@
                         }
 
                     } else {
-                        inn=children[j]["name"];
-                        str += "<div><span class='leaf'></span><span class='leafName'> <a href='##' onclick='way2()'>" + children[j]["name"] + "</a></div>";
+                        str += "<div><span class='leaf'></span><span class='leafName' > <a href='##' onclick='way2(this)'>" + children[j]["name"] + "</a></div>";
                     }
 
                     createTree(children[j]["children"])

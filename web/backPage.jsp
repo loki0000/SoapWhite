@@ -9,11 +9,11 @@
 <html>
 <head>
     <title>商品后台管理</title>
-    <link rel="stylesheet" type="text/css" href="../css/shop/backPage.css"/>
+    <link rel="stylesheet" type="text/css" href="css/backPage.css"/>
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
-    <link rel="bookmark" href="../img/favicon.ico" type="image/x-icon" />
-    <script type="text/javascript" src="../js/shop/backPage.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="img/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="js/shop/backPage.js"></script>
     <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript">
         function page() {
@@ -30,7 +30,7 @@
         <span>商品后台管理</span>
     </div>
     <div id="leftpage">
-        <iframe width="100%" height="100%" src="../plug-in/tree/index.jsp"></iframe>
+        <iframe width="100%" height="100%" src="plug-in/tree/index.jsp"></iframe>
     </div>
     <div id="rightpage">
         <iframe id="iframe" width="100%" height="100%" src="dafd.html"></iframe>
