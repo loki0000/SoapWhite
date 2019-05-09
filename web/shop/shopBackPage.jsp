@@ -17,15 +17,15 @@
 <body>
     <div id="box">
         <div id="box-outer">
-            <form action="" method="post">
+            <form action="${pageContext.request.contextPath}/adiministrator" method="post">
                 <table>
                     <tr>
                         <td>管理员：</td>
-                        <td> <input type="text" name="backuser" class="textbox"/><br/></td>
+                        <td> <input type="text" name="adiministrator" class="textbox"/><br/></td>
                     </tr>
                     <tr>
                         <td>密  码：</td>
-                        <td> <input type="text" name="backpassword" class="textbox"><br/></td>
+                        <td> <input type="text" name="password" class="textbox"><br/></td>
                     </tr>
                     <tr>
                         <td></td>

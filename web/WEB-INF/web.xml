@@ -5,4 +5,13 @@
 		  http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
            version="4.0">
 
+    <servlet>
+        <servlet-name>adiministrator</servlet-name>
+        <servlet-class>cn.javafeizhao.web.ServletAdiministratorWEB</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>adiministrator</servlet-name>
+        <url-pattern>/adiministrator</url-pattern>
+    </servlet-mapping>
+
 </web-app>
