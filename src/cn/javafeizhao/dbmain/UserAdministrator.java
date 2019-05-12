@@ -3,23 +3,23 @@ package cn.javafeizhao.dbmain;
 public class UserAdministrator {
 
 
-    private  String Administrator;
-    private String password;
+    private static   String Administrator;
+    private static String password;
 
-    public String getAdministrator() {
+    public static String getAdministrator() {
         return Administrator;
     }
 
-    public void setAdministrator(String administrator) {
-        Administrator = administrator;
+    public static void setAdministrator(String administrators) {
+        Administrator = administrators;
     }
 
-    public String getPassword() {
+    public static String getPassword() {
         return password;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public static void setPassword(String passwords) {
+        password = passwords;
     }
 
 

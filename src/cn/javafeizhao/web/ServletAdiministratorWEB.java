@@ -1,7 +1,7 @@
 package cn.javafeizhao.web;
 
 import cn.javafeizhao.dbmain.UserAdministrator;
-
+import cn.javafeizhao.servlet.AdiministeratorVerify;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,15 +18,16 @@ public class ServletAdiministratorWEB extends HttpServlet {
             String adiministrator=request.getParameter("adiministrator");
             String password=request.getParameter("password");
         //封装数据
-        UserAdministrator user=new UserAdministrator();
-        user.setAdministrator(adiministrator);
-        user.setPassword(password);
+        UserAdministrator.setAdministrator(adiministrator);
+        UserAdministrator.setPassword(password);
 
-
-
-
-
-
+        //验证数据
+        AdiministeratorVerify adiministeratorVerify=new AdiministeratorVerify();
+        if(adiministeratorVerify.verifyAdiministerator()) {
+            request.getRequestDispatcher("backPage.jsp").forward(request, response);
+        }else {
+            response.getWriter().write("I'm sorry");
+        }
 
     }
 
