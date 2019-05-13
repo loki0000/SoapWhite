@@ -71,6 +71,7 @@ a{
 }
 .picture_presentation{
     width: 1200px;
+    height: 900px;
     margin: 0px auto;
     background-color: white;
 }
@@ -107,5 +108,39 @@ a{
 }
 .diviimage ul:hover .pitchUP{
     display: block;
+}
+#paging{
+    width:500px;
+    height:30px ;
+    margin:0px auto;
+    padding: 20px;
+    overflow: hidden;
+
+}
+
+#paging ul{
+    width:400px;
+    margin: 0px auto;
+}
+#paging ul li{
+    float: left;
+    list-style: none;
+    width: 50px;
+    height: 35px;
+    background-color: #d2e0f9;
+    color: #0b090d;
+    text-align: center;
+    padding-top: 15px;
+    margin-left:2px ;
+    cursor: pointer;
+}
+#paging ul li:hover{
+    background-color: #e6e2e6;
+}
+#paging .pitchOn{
+    background-color: #ca381a;
+}
+#paging .pitchOn:hover{
+    background-color: #ca381a;
 }
 

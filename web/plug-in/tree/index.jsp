@@ -80,12 +80,12 @@
 
     var arr = [
         {
-            name: "管理选项", open: true,
+            name: "选项", open: true,
             children: [
                 {
-                    name: "商品管理",
+                    name: "商品",
                     children: [
-                        {name: "商品修改", nid: "nid"}
+                        {name: "商品管理", nid: "nid"}
                     ]
                 }
                 ]

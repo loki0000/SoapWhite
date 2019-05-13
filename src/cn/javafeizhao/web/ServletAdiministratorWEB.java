@@ -17,6 +17,7 @@ public class ServletAdiministratorWEB extends HttpServlet {
             request.setCharacterEncoding("utf-8");
             String adiministrator=request.getParameter("adiministrator");
             String password=request.getParameter("password");
+            request.setAttribute("adiministrator",adiministrator);
         //封装数据
         UserAdministrator.setAdministrator(adiministrator);
         UserAdministrator.setPassword(password);

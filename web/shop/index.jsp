@@ -45,7 +45,7 @@
                     <ul>
                         <li><img src="../img/page3/kuzhi.png" width="100%" height="100%"/></li>
                         <li>name${i}</li>
-                        <li>200${i}$</li>
+                        <li><ins style="color: red">120${i}￥</ins> <del style="font-size:9px">200${i}￥</del></li>
                         <li>购买</li>
                         <li class="pitchUP">pitchUP</li>
                     </ul>
@@ -54,14 +54,15 @@
         </div>
         <!--分页-->
         <div id="paging">
+
             <ul>
-                <li><img src="../img/page3/back.png" width="100%" height="100%"/></li>
-                <li>1</li>
+                <li id="upPage" style="padding: 0px; height: 50px;background-color: #ca381a;" ><img src="../img/page3/upPage.png" width="100%" height="100%"/></li>
+                <li class="pitchOn">1</li>
                 <li>2</li>
                 <li>3</li>
                 <li>4</li>
                 <li>5</li>
-                <li><img src="../img/page3/back.png" width="100%" height="100%"></li>
+                <li id="nextPage" style="padding: 0px; height: 50px;background-color: #ca381a;"><img src="../img/page3/nextPage.png" width="100%" height="100%"></li>
             </ul>
         </div>
     </div>

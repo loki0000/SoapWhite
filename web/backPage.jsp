@@ -28,6 +28,7 @@
 <body>
     <div id="pagename">
         <span>商品后台管理</span>
+        <span id="adiministrator">${requestScope.adiministrator}</span>
     </div>
     <div id="leftpage">
         <iframe width="100%" height="100%" src="plug-in/tree/index.jsp"></iframe>

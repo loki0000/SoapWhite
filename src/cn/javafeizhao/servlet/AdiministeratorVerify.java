@@ -2,12 +2,9 @@ package cn.javafeizhao.servlet;
 
 import cn.javafeizhao.dbmain.UserAdministrator;
 import cn.javafeizhao.obd.AdiministratorSQl;
-import java.sql.SQLException;
+
 
 public class AdiministeratorVerify {
-
-
-
 
     String useradministrator= UserAdministrator.getAdministrator();
     String password=UserAdministrator.getPassword();
