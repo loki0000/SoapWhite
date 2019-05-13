@@ -38,7 +38,7 @@
             <div class="slideshow_right"></div>
             </div>
         </div>
-        <!--图片展示-->
+        <!--商品展示-->
         <div class="picture_presentation">
             <c:forEach begin="0" end="5" var="i">
                 <div class="diviimage">
@@ -52,8 +52,20 @@
                 </div>
             </c:forEach>
         </div>
-
+        <!--分页-->
+        <div id="paging">
+            <ul>
+                <li><img src="../img/page3/back.png" width="100%" height="100%"/></li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li><img src="../img/page3/back.png" width="100%" height="100%"></li>
+            </ul>
+        </div>
     </div>
+
 
 </body>
 </html>
