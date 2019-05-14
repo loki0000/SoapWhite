@@ -14,4 +14,16 @@
         <url-pattern>/adiministrator</url-pattern>
     </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>showproduct</servlet-name>
+        <servlet-class> cn.javafeizhao.web.ServletShowProduct</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>showproduct</servlet-name>
+        <url-pattern>/showproduct</url-pattern>
+    </servlet-mapping>
+
+
+
 </web-app>

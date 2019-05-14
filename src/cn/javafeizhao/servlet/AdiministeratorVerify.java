@@ -1,14 +1,14 @@
 package cn.javafeizhao.servlet;
 
 import cn.javafeizhao.dbmain.UserAdministrator;
-import cn.javafeizhao.obd.AdiministratorSQl;
+import cn.javafeizhao.obd.ProcessingDatabase;
 
 
 public class AdiministeratorVerify {
 
     String useradministrator= UserAdministrator.getAdministrator();
     String password=UserAdministrator.getPassword();
-    AdiministratorSQl adiministratorsql=new AdiministratorSQl();
+    ProcessingDatabase adiministratorsql=new ProcessingDatabase();
     //验证管理员身份
     public boolean verifyAdiministerator(){
 //        System.out.println(useradministrator+"-----"+password);

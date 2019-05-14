@@ -143,4 +143,7 @@ a{
 #paging .pitchOn:hover{
     background-color: #ca381a;
 }
+#paging .page{
 
+    cursor: not-allowed;
+}
