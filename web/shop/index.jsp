@@ -71,7 +71,7 @@
                         <li class="pitchOn"><a href="javascript:void(0)">${i}</a></li>
                     </c:if>
                     <c:if test="${pagingBean.atPresentPageTree!=i}">
-                        <li><a href="${pageContext.request.contextPath}/showproduct?index=${i}">${i}</a></li>
+                        <a href="${pageContext.request.contextPath}/showproduct?index=${i}"><li>${i}</li></a>
                     </c:if>
 
                 </c:forEach>
