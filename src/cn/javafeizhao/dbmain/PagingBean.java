@@ -17,6 +17,16 @@ public class PagingBean {
     int atPresentPageTree;
     //商品资源
     List<ShopAttritube> shopAttritubes=new ArrayList<ShopAttritube>();
+    //返回list的长度
+    int shopListlength;
+
+    public int getShopListlength(){
+        return shopListlength;
+    }
+    public void setShopListlength( List<ShopAttritube> shopAttritubes){
+        this.shopListlength=shopAttritubes.size();
+    }
+
 
 
     public int getTotalNumber() {

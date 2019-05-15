@@ -26,10 +26,11 @@ public class ProcessingDatabase {
     //查询商品总条数
     public static int queryProductTotalNumber()throws SQLException{
         QueryRunner queryRunner=new QueryRunner(DataSourceUtils.getDataSource());
-        String sql="select * from shop";
-        int totalNumber=(int) queryRunner.query(sql,new ScalarHandler());
-        return totalNumber;
+        String sql="select count(*) from shop";
+        Long totalNumber=(Long)queryRunner.query(sql,new ScalarHandler());
+        return totalNumber.intValue();
     }
+
 
     //对商品进行分页查询
     public static List<ShopAttritube> quseryPaging(int atpresentpagetree,int eachpage)throws SQLException{

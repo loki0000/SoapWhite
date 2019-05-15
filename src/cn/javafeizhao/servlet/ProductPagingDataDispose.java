@@ -26,8 +26,7 @@ public class ProductPagingDataDispose {
     }
     //通过计算获取总页数=总条数/每页显示的条数
     public static int getNumberOfTotalPages(int sum,int eachpage){
-        double sum2 =sum/eachpage;
-        int umberOfTotalPages=(int)Math.ceil(sum2);
+        int umberOfTotalPages=(int)Math.ceil(1.0*sum/eachpage);
 
      return  umberOfTotalPages;
     }

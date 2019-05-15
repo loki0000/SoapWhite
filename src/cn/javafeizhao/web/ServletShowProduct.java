@@ -23,17 +23,29 @@ public class ServletShowProduct extends HttpServlet {
         //获取实体bean中页面所需要的参数；
         //总条数
         int totalNumber= ProductPagingDataDispose.getSumNumber();
-        System.out.println(totalNumber);
+        pagingBean.setTotalNumber(totalNumber);
         //每页显示的条数
         int eachPage=ProductPagingDataDispose.getEachPage(8);
+        pagingBean.setEachPage(eachPage);
         //总页数
         int numberOfTotalPages=ProductPagingDataDispose.getNumberOfTotalPages(totalNumber,eachPage);
+        pagingBean.setNumberOfTotalPages(numberOfTotalPages);
         //当前页数
-        int atPresentPageTree=ProductPagingDataDispose.getAtPresentPageTree(1);
+        int index=1;
+        if (request.getParameter("index")!=null) {
+            index = Integer.parseInt(request.getParameter("index"));
+        }
+        int atPresentPageTree=ProductPagingDataDispose.getAtPresentPageTree(index);
+        pagingBean.setAtPresentPageTree(atPresentPageTree);
         //商品资源
         List<ShopAttritube> shopAttritubeList=ProductPagingDataDispose.getShopListAttritube(atPresentPageTree,eachPage);
+        pagingBean.setShopAttritubes(shopAttritubeList);
+        pagingBean.setShopListlength(shopAttritubeList);
 
-
+        //将实体bean存入request域中
+        request.setAttribute("pagingBean",pagingBean);
+        //转发到jsp页面
+        request.getRequestDispatcher("shop/index.jsp").forward(request,response);
 
     }
 

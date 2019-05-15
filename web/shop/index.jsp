@@ -1,4 +1,5 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
+<%@ taglib  uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <%--
   Created by IntelliJ IDEA.
   UserAdministrator: Administrator
@@ -6,7 +7,7 @@
   Time: 21:13
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <html>
 <head>
     <title>商店</title>
@@ -34,35 +35,57 @@
         <div id="slideshow">
             <div class="slideshow_box">
             <div class="slideshow_left"></div>
-            <div class="slideshow_center"><img src="../img/page3/lbt1.png" width="100%"/></div>
+            <div class="slideshow_center"><img src="${pageContext.request.contextPath}/img/page3/lbt1.png" width="100%"/></div>
             <div class="slideshow_right"></div>
             </div>
         </div>
         <!--商品展示-->
         <div class="picture_presentation">
-            <c:forEach begin="0" end="5" var="i">
+            <c:forEach begin="1" end="${pagingBean.shopListlength}" var="i">
                 <div class="diviimage">
                     <ul>
-                        <li><img src="../img/page3/kuzhi.png" width="100%" height="100%"/></li>
-                        <li>name${i}</li>
-                        <li><ins style="color: red">120${i}￥</ins> <del style="font-size:9px">200${i}￥</del></li>
+                        <li><img src="${pageContext.request.contextPath}/${pagingBean.shopAttritubes[i-1].shopImage}" width="100%" height="100%"/></li>
+                        <li>${pagingBean.shopAttritubes[i-1].shopName}</li>
+                        <li><ins style="color: red">${pagingBean.shopAttritubes[i-1].shopMoney}￥</ins> <del style="font-size:9px">${pagingBean.shopAttritubes[i-1].shopDescribe}</del></li>
                         <li>购买</li>
                         <li class="pitchUP">pitchUP</li>
                     </ul>
                 </div>
             </c:forEach>
+
         </div>
         <!--分页-->
         <div id="paging">
-
             <ul>
-                <li id="upPage" style="padding: 0px; height: 50px;background-color: #ca381a;" class="page"><img src="../img/page3/upPage.png" width="100%" height="100%"/></li>
-                <li class="pitchOn">1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li id="nextPage" style="padding: 0px; height: 50px;background-color: #ca381a;"><img src="../img/page3/nextPage.png" width="100%" height="100%"></li>
+                <%-- 判断当前页面是否是第一页 --%>
+                <c:if test="${pagingBean.atPresentPageTree==1}">
+                    <li id="upPage" style="padding: 0px; height: 50px;background-color: #ca381a;" class="page"><img src="${pageContext.request.contextPath}/img/page3/upPage.png" width="100%" height="100%"/></li>
+                </c:if>
+                <c:if test="${pagingBean.atPresentPageTree!=1}">
+                    <li id="upPage" style="padding: 0px; height: 50px;background-color: #ca381a;" ><a href="${pageContext.request.contextPath}/showproduct?index=${pagingBean.atPresentPageTree-1}"><img src="${pageContext.request.contextPath}/img/page3/upPage.png" width="100%" height="100%"/></a></li>
+                </c:if>
+
+                    <%--//显示总全部的页数--%>
+                <c:forEach begin="1" end="${pagingBean.numberOfTotalPages}" var="i">
+                    <c:if test="${pagingBean.atPresentPageTree==i}">
+                        <li class="pitchOn"><a href="javascript:void(0)">${i}</a></li>
+                    </c:if>
+                    <c:if test="${pagingBean.atPresentPageTree!=i}">
+                        <li><a href="${pageContext.request.contextPath}/showproduct?index=${i}">${i}</a></li>
+                    </c:if>
+
+                </c:forEach>
+
+                <%-- 判断当前页面是否是最后一页 --%>
+                <c:if test="${pagingBean.atPresentPageTree==pagingBean.numberOfTotalPages}">
+                    <li id="nextPage" style="padding: 0px; height: 50px;background-color: #ca381a;" class="page"><img src="${pageContext.request.contextPath}/img/page3/nextPage.png" width="100%" height="100%"></li>
+                </c:if>
+                <c:if test="${pagingBean.atPresentPageTree!=pagingBean.numberOfTotalPages}">
+                    <li id="nextPage" style="padding: 0px; height: 50px;background-color: #ca381a;" ><a href="${pageContext.request.contextPath}/showproduct?index=${pagingBean.atPresentPageTree+1}"><img src="${pageContext.request.contextPath}/img/page3/nextPage.png" width="100%" height="100%"></a></li>
+                </c:if>
+
+
+
             </ul>
         </div>
     </div>
