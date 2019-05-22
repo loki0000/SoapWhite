@@ -17,7 +17,7 @@
     <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript">
         function page() {
-            $("#iframe").attr("src","index.jsp")
+            $("#iframe").attr("src","${pageContext.request.contextPath}/shop/upshop.jsp")
         }
         function page2() {
             $("#iframe").attr("src","backPage.jsp")
@@ -27,14 +27,14 @@
 </head>
 <body>
     <div id="pagename">
-        <span>商品后台管理</span>
+        <span>后台管理</span>
         <span id="adiministrator">${requestScope.adiministrator}</span>
     </div>
     <div id="leftpage">
         <iframe width="100%" height="100%" src="plug-in/tree/index.jsp"></iframe>
     </div>
     <div id="rightpage">
-        <iframe id="iframe" width="100%" height="100%" src="dafd.html"></iframe>
+        <iframe id="iframe" width="100%" height="100%" src=""></iframe>
     </div>
 
 </body>

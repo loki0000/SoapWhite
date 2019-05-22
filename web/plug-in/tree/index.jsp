@@ -69,7 +69,7 @@
 
         var strname=inn.innerText
         //alert(strname)
-        if (strname=="商品修改") {
+        if (strname=="商品管理") {
             parent.window.page();
 
         }else if (strname=="待更新"){

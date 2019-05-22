@@ -7,13 +7,15 @@
   Time: 21:13
   To change this template use File | Settings | File Templates.
 --%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
+
 <html>
 <head>
     <title>商店</title>
-    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
-    <link rel="bookmark" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="${pageContext.request.contextPath}/img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="${pageContext.request.contextPath}/img/favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="${pageContext.request.contextPath}/img/favicon.ico" type="image/x-icon" />
     <script type="text/javascript" src="../js/shop/index.js"></script>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/shop/index.css"/>
 </head>
